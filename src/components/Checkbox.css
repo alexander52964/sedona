@@ -1,0 +1,75 @@
+.infra-checkbox h4 {
+  color: var(--white-default);
+  margin-bottom: 3.2rem;
+}
+.infra-checkbox__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.6rem;
+}
+.checkbox-wraper input {
+  appearance: none;
+}
+
+.checkbox-wraper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+}
+.checkbox-wraper input {
+  position: absolute;
+}
+
+.checkbox-wraper label {
+  color: var(--white-default);
+}
+
+.checkbox-wraper input {
+  display: block;
+  width: 2rem;
+  height: 1.9rem;
+}
+
+.custom-checkbox {
+  width: 2rem;
+  height: 1.9rem;
+  border-radius: 0.4rem;
+  background-color: var(--white-default);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.custom-checkbox img {
+  visibility: hidden;
+}
+
+.checkbox-wraper input:checked ~ .custom-checkbox img {
+  visibility: visible;
+}
+
+.checkbox-wraper input:focus + .custom-checkbox {
+  border: 0.2rem solid var(--blue-83);
+}
+
+.checkbox-wraper input:active + .custom-checkbox {
+  opacity: 0.3;
+}
+.checkbox-wraper input:hover + .custom-checkbox {
+  opacity: 0.6;
+}
+.checkbox-wraper input:hover ~ label {
+  opacity: 0.6;
+}
+
+.checkbox-wraper input:active ~ label {
+  opacity: 0.3;
+}
+.custom-checkbox:hover + label {
+  opacity: 0.6;
+}

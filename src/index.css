@@ -1,0 +1,168 @@
+:root {
+  /* Text colors */
+  --black-default: #000;
+  --black-second: #333;
+  --white-default: #fff;
+  --texts-background-small: rgba(255, 255, 255, 0.3);
+  --texts-error: #ff5757;
+  /* Buttons color */
+  --brown: #756157;
+  --green: #7db54f; /*button rest */
+  --blue-82: #82b3d3; /* Buttons  & backgrounds*/
+  --blue-83: #83b3d3; /* Icons*/
+  --light-blue-12: rgba(131, 179, 211, 0.12); /* backgrounds */
+  --light-blue-20: rgba(131, 179, 211, 0.2); /* backgrounds */
+  /* Form color */
+  --dark-blue: #3f5e72; /*forms-inputs*/
+  --buttons-blue-hover: #68a2ca; /*border & button hover*/
+  --gray-e5: #e5e5e5; /* forms-elements-1 border rest*/
+  --gray-f2: #f2f2f2; /* forms-elements-2 */
+  --gray-30: rgba(0, 0, 0, 0.3); /*borders disabled*/
+  /* buttons text colors */
+  --white-text: rgba(255, 255, 255, 0.3); /*action*/
+  /* buttons brown */
+  --buttons-brown-hover: #615048;
+  /* buttons green */
+  --buttons-green-hover: #6c9e42; /* button hover*/
+  --gray-e6: #e6e6e6; /*catalog list border-button*/
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  outline: none;
+  text-align: center;
+  color: var(--black-default);
+}
+
+html {
+  font-size: 62.5%;
+  background-color: lightgray;
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+.font_4 {
+  /* Headings/Heading 4 */
+  font-family: PT Sans;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  /* 120% */
+}
+
+.fontSmalBtn {
+  text-align: center;
+  /* Buttons/Button small */
+  font-family: PT Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  /* 125% */
+
+  /* word-wrap: break-word; */
+}
+
+h1 {
+  /* Headings/Heading 1 */
+  font-family: PT Sans;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 7.8rem;
+  /* 130% */
+}
+h2 {
+  /* Headings/Heading 2 */
+  font-family: PT Sans;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.6rem;
+  /* 120% */
+}
+h3 {
+  /* Headings/Heading 3 */
+  font-family: PT Sans;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem;
+  /* 116.667% */
+  color: var(--black-second);
+}
+
+p {
+  /* Texts/Text basic */
+  font-family: PT Sans;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+  /* 118.182% */
+}
+.btnLikeNorm {
+  /* Buttons/Button like normal */
+  font-family: PT Sans;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem; /* 125% */
+}
+
+.text-blocks {
+  /* Texts/Text blocks */
+  font-family: PT Sans;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem; /* 116.667% */
+}
+.phone-Text {
+  font-family: PT Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+}
+.blue {
+  background: var(--blue-82);
+}
+
+.green {
+  background: var(--green);
+}
+
+.brown {
+  background-color: var(--brown);
+}
+
+.gray-f2 {
+  background: var(--gray-f2);
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

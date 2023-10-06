@@ -1,0 +1,76 @@
+footer {
+  height: 12rem;
+  padding: 4rem 7rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white-default);
+}
+
+.socmedia-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.7rem;
+}
+
+/* socmedia icons */
+.socmedia-list svg {
+  fill: var(--blue-83);
+}
+.socmedia-list svg:hover {
+  fill: rgba(104, 162, 202, 1);
+}
+.socmedia-list svg:focus {
+  fill: rgba(104, 162, 202, 1);
+}
+.socmedia-list svg:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+/* Phone colors */
+.phone-number:hover {
+  color: var(--brown);
+}
+.phone-number:focus {
+  color: var(--brown);
+}
+.phone-number:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+/* html-academy colors */
+
+.html-academy svg {
+  fill: var(--black-default);
+}
+.html-academy svg:hover {
+  fill: var(--brown);
+}
+
+.html-academy svg:focus {
+  fill: var(--brown);
+}
+
+.html-academy svg:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .phone-number {
+    order: 2;
+  }
+  .html-academy {
+    order: 1;
+  }
+  .socmedia-list {
+    order: 0;
+  }
+  footer {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 4rem 3rem 3rem;
+    gap: 3rem;
+    justify-content: space-around;
+  }
+}

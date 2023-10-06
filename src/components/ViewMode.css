@@ -1,0 +1,32 @@
+.catalog__sorting-display-metod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.catalog__sorting label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem 1.2rem;
+  border-radius: 4px;
+  border: 2px solid var(--forms-elements-1, #e5e5e5);
+  pointer-events: all;
+}
+
+.catalog__sorting-display-metod input:checked + label {
+  border: 0.2rem solid var(--buttons-blue-hover);
+}
+
+#list,
+#slideShow,
+#table {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+  .catalog__sorting-display-metod {
+    display: none;
+  }
+}

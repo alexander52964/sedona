@@ -1,0 +1,46 @@
+.modal-wraper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+.modal-window {
+  width: 71.7rem;
+  height: 57.6rem;
+  background-color: var(--white-default);
+  border-radius: 3rem;
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
+
+  position: absolute;
+  top: 39.6rem;
+  left: 24rem;
+  padding: 6.4rem 7rem;
+}
+
+.modal-window__search-form {
+  border: 1px solid black;
+}
+
+.modal-window__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  width: 5.2rem;
+  height: 5.2rem;
+  position: relative;
+  left: 2rem;
+  border-radius: 50%;
+  background-color: var(--gray-f2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-btn::after {
+  content: '';
+  background: center url('../assets/x.svg') no-repeat;
+  width: 2rem;
+  height: 2rem;
+}

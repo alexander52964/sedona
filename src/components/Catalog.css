@@ -1,0 +1,27 @@
+.catalog__card-list {
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 0.1rem solid var(--gray-e6);
+
+  display: grid;
+}
+
+.table_mode {
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.list_mode {
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+.slideShow_mode {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}

@@ -1,0 +1,75 @@
+.radio-btn-list h4 {
+  color: var(--white-default);
+  margin-bottom: 1.6rem;
+}
+.radio-btn-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.6rem;
+}
+
+.radio-btn-wraper input {
+  position: absolute;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  appearance: none;
+}
+
+.radio-btn-wraper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.radio-btn-wraper label {
+  color: var(--white-default);
+}
+
+.custom-radio-btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--white-default);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.custom-radio-btn::before {
+  content: '';
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--dark-blue);
+}
+.custom-radio-btn::before {
+  visibility: hidden;
+}
+
+.radio-btn-wraper input:checked ~ .custom-radio-btn::before {
+  visibility: visible;
+}
+
+.radio-btn-wraper input:focus + .custom-radio-btn {
+  border: 0.2rem solid var(--blue-83);
+}
+
+.radio-btn-wraper input:active + .custom-radio-btn {
+  opacity: 0.3;
+}
+.radio-btn-wraper input:hover + .custom-radio-btn {
+  opacity: 0.6;
+}
+.radio-btn-wraper input:hover ~ label {
+  opacity: 0.6;
+}
+
+.radio-btn-wraper input:active ~ label {
+  opacity: 0.3;
+}

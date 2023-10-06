@@ -1,0 +1,132 @@
+.price-slider {
+  width: 28.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 3.2rem;
+}
+.price-slider h4 {
+  color: var(--white-default);
+}
+.range-slider__ranges {
+  width: 28.8rem;
+  /* border: 1px solid red; */
+  height: 3rem;
+  padding-top: 1.4rem;
+  position: relative;
+  /* margin-top: 0.4rem; */
+}
+.slider__track {
+  position: absolute;
+
+  height: 0.5rem;
+  width: 100%;
+  background-color: #535252;
+}
+
+.slider__range {
+  position: absolute;
+  height: 0.5rem;
+  position: absolute;
+  background-color: #fff;
+}
+.range-left {
+  width: 100%;
+  position: absolute;
+  height: 0;
+  pointer-events: none;
+  left: 0;
+}
+
+.range-right {
+  width: 100%;
+  position: absolute;
+  height: 0;
+  pointer-events: none;
+  left: 0;
+}
+.range-left,
+.range-left::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.range-right,
+.range-right::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.range-left::-webkit-slider-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  /* margin-top: 4px; */
+  pointer-events: all;
+  position: relative;
+}
+
+.range-right::-webkit-slider-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  /* margin-top: 4px; */
+  pointer-events: all;
+  position: relative;
+}
+/* 
+input[type='number'] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+} */
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type='number'] {
+  width: 6rem;
+  height: 2.4rem;
+}
+
+.price-slider__num-inputs-wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.range-slider__num-input {
+  width: 14.3rem;
+  padding: 1.2rem 2rem;
+  border-radius: 0.4rem 0rem 0rem 0.4rem;
+  background: var(--white-default);
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-slider__num-input:last-child {
+  border-radius: 0rem 0.4rem 0.4rem 0rem;
+}
+.range-slider__num-input input {
+  font-weight: 700;
+}
+
+.range-slider__num-input:first-child::after {
+  content: 'от';
+  opacity: 0.3;
+}
+.range-slider__num-input:last-child::after {
+  content: 'до';
+  opacity: 0.3;
+}

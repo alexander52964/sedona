@@ -1,0 +1,84 @@
+.hotels-filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* visibility: hidden; */
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 3.2rem;
+}
+.form-buttons button {
+  border-radius: 0.4rem;
+  color: var(--white-default);
+  padding: 0.8rem 5rem;
+}
+
+.form-buttons button:first-child {
+  background-color: var(--blue-82);
+}
+.form-buttons button:first-child:hover {
+  background-color: var(--buttons-blue-hover);
+}
+.form-buttons button:first-child:focus {
+  background-color: var(--buttons-blue-hover);
+}
+.form-buttons button:first-child:active {
+  background-color: var(--blue-82);
+  color: var(--white-text);
+}
+.form-buttons button:first-child:disabled {
+  background-color: var(--gray-e5);
+}
+
+.form-buttons button:last-child {
+  background: transparent;
+  border: 0.2rem solid transparent;
+}
+.form-buttons button:last-child:hover {
+  opacity: 0.6;
+}
+.form-buttons button:last-child:focus {
+  border: 0.2rem solid var(--blue-82);
+}
+.form-buttons button:last-child:active {
+  color: var(--white-text);
+}
+.form-buttons button:last-child:disabled {
+  opacity: 0.1;
+}
+
+@media (max-width: 1050px) {
+  .hotels-filter {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+  }
+  .dual {
+    /* order: -1; */
+  }
+  .hotels-filter {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    align-items: center;
+    padding: 3rem;
+  }
+  .visible {
+    visibility: visible;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 501px) {
+  .hotels-filter {
+    flex-direction: column;
+  }
+}

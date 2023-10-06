@@ -1,0 +1,122 @@
+.header {
+  height: 6.4rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7rem;
+  gap: 3rem;
+  background: var(--white-default);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+/* Logo */
+.header-logo {
+  width: 14rem;
+  height: 7rem;
+}
+/* nav-menu */
+.nav {
+  flex-basis: 100%;
+}
+.nav-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.nav-list__item {
+  padding: 0 1.6rem;
+}
+.nav-list__link {
+  padding-bottom: 1.7rem;
+  color: var(--black-default);
+}
+
+.nav-list__link:hover {
+  border-bottom: 0.2rem groove var(--brown);
+}
+.nav-list__link:focus {
+  border-bottom: 0.2rem groove var(--brown);
+}
+
+/* user menu */
+.user-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.user-menu__search {
+  width: 2rem;
+  height: 2rem;
+}
+
+.user-menu__favorites {
+  width: 2.8rem;
+  height: 2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.user-menu__counter {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: -1.3rem;
+  left: 1rem;
+  border-radius: 50%;
+  background-color: var(--green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-menu button {
+  border-style: none;
+  outline: none;
+  width: 16rem;
+  height: 3.6rem;
+  border-radius: 0.4rem;
+  color: var(--white-default);
+}
+
+.user-menu button:hover {
+  background-color: var(--buttons-brown-hover);
+  cursor: pointer;
+}
+.user-menu button:focus {
+  background-color: var(--buttons-brown-hover);
+}
+.user-menu button:active {
+  color: var(--white-text);
+}
+.user-menu button:disabled {
+  background-color: var(--gray-e5);
+  color: var(--white-default);
+}
+
+@media (max-width: 968px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    padding-bottom: 2rem;
+    gap: 5rem;
+  }
+  .header-logo {
+    order: 0;
+  }
+
+  .nav {
+    order: 2;
+  }
+  .nav-list {
+    justify-content: space-between;
+  }
+  .user-menu {
+    flex-basis: 100%;
+    order: 1;
+  }
+}

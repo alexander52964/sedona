@@ -1,0 +1,201 @@
+.main-sedona {
+  background: var(--white-default);
+  margin: 0;
+}
+
+.welcome-sedona {
+  max-width: 120rem;
+  height: 48.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5.1rem;
+}
+.welcome-sign li:last-child img {
+  width: 45.7rem;
+  height: 21.3rem;
+}
+
+.welcome-sign {
+  max-width: 45.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+}
+.welcome-sign li:nth-child(2) {
+  margin-bottom: 4.3rem;
+}
+
+.welcome-sedona__decor {
+  width: 100%;
+  height: 5.7rem;
+  margin-bottom: -0.1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(8, auto);
+  margin-bottom: -0.2rem;
+}
+
+.about-sedona,
+.visti-sedona,
+.hotels-search,
+.subscribe {
+  grid-column: 1 / -1;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sedona-townImg {
+  height: 38.5rem;
+  grid-column: 2 / -1;
+}
+
+.sedona-canionImg {
+  grid-column: 1 / 3;
+  height: 38.5rem;
+}
+
+.about-sedona {
+  max-width: 70rem;
+  min-height: 28rem;
+  gap: 2.5rem;
+  padding: 2rem;
+}
+
+.title-card {
+  height: 38.5rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.title-card h3 {
+  width: 17.5rem;
+  color: inherit;
+  text-indent: 1rem;
+}
+
+.title-card hr {
+  background-color: var(--gray-30);
+  width: 6rem;
+  height: 0.2rem;
+}
+
+.title-card p {
+  max-width: 23rem;
+  color: inherit;
+}
+
+.card_bg-bl-82 {
+  background-color: var(--blue-82);
+}
+
+.card_col-wh-df {
+  color: var(--white-default);
+}
+.card_bg-lb-20 {
+  background-color: var(--light-blue-20);
+}
+.card_bg-lb-12 {
+  background-color: var(--light-blue-12);
+}
+.title-card:nth-child(4),
+.title-card:nth-child(6),
+.title-card:nth-child(10),
+.title-card:nth-child(12) {
+  background-color: var(--light-blue-12);
+}
+
+.title-card:nth-child(5) {
+  background-color: var(--light-blue-20);
+}
+
+.title-card img {
+  order: -1;
+}
+/* .icon-card {
+  height: 38.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+} */
+
+.visti-sedona {
+  max-width: 56rem;
+  min-height: 26.1rem;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.hotels-search {
+  max-width: 59.2rem;
+  min-height: 40.6rem;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.hotels-search p {
+  white-space: pre;
+}
+
+.hotels-search button {
+  width: 37.6rem;
+  padding: 1rem;
+  height: 5.2rem;
+  margin-top: 6.3rem;
+  background-color: var(--brown);
+  border-radius: 0.4rem;
+  color: var(--white-default);
+  text-transform: uppercase;
+}
+
+.hotels-search button:hover {
+  background-color: var(--buttons-brown-hover);
+}
+.hotels-search button:focus {
+  background-color: var(--buttons-brown-hover);
+}
+.hotels-search button:active {
+  color: var(--white-text);
+}
+.hotels-search button:disabled {
+  background-color: var(--gray-e5);
+  color: var(--white-default);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container > * {
+    grid-column: 1 / -1;
+  }
+  .sedona-canionImg {
+    grid-row: 8;
+  }
+  .title-card h3,
+  .title-card p {
+    max-width: 100%;
+  }
+  .hotels-search p {
+    white-space: normal;
+  }
+  .welcome-sign li:last-child img {
+    transform: scale(0.7);
+  }
+}

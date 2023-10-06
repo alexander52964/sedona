@@ -1,0 +1,26 @@
+#root {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
+
+main {
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  /* min-height: 100vh; */
+  flex: 1 0 auto;
+  scroll-behavior: smooth;
+}
+
+footer {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex: 0 0 auto;
+}
